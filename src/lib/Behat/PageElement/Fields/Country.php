@@ -37,6 +37,8 @@ class Country extends EzFieldElement
             sprintf('%s %s', $this->fields['fieldContainer'], $this->fields['fieldInput'])
         );
 
+        Assert::fail();
+
         Assert::assertNotNull($fieldInput, sprintf('Input for field %s not found.', $this->label));
 
         return [$fieldInput->getValue()];
