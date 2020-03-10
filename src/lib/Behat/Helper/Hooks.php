@@ -95,7 +95,7 @@ class Hooks extends RawMinkContext
 
     public function formatForDisplay(array $logEntries, string $sectionName)
     {
-        $output = $sectionName ? sprintf('%s' . PHP_EOL, $sectionName) : '';
+        $output = sprintf('%s' . PHP_EOL, $sectionName);
 
         if (empty($logEntries)) {
             $output .= sprintf("\t No logs for this section.") . PHP_EOL;
